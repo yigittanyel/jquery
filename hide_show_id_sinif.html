@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Deneme Projesi</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <p id="yt">BlogByEngineers</p>
+    <p class="ytn">BBE</p>
+    <button id="bt">Hide</button>
+    <button id="bt2">Show</button>
+    <script>
+        $(document).ready(function() {
+            $("#bt").click(function() {
+                $("p").hide();
+            });
+        });
+         $(document).ready(function() {
+            $("#bt2").click(function() {
+                $("p#yt").show();
+            });
+        });
+    </script>
+</body>
+
+</html>

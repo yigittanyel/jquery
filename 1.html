@@ -1,63 +1,32 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>Deneme Projesi</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideDown("slow");
+  });
+});
+</script>
+<style> 
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #e5eecc;
+  border: solid 1px #c3c3c3;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+</style>
 </head>
-
 <body>
-    <p id="yt">BlogByEngineers</p>
-    <p class="ytn">BBE</p>
-    <p class="me">YTanyel</p>
-    <input type="text" id="t1" name="Adınız:">
-    <input type="text" id="t2" name="Numaranız:">
-    <script>
-        $("p#yt").click(function() {
-            $(this).hide();
-        });
-        $("p.ytn").dblclick(function() {
-            $(this).hide();
-        });
-        //  COMMENTS :   CTRL + SHIFT + / 
-        /*$("p.me").mouseenter(function(){
-           alert("Yazının üstüne gittin");
-        });*/
-        /*$("p.me").mouseleave(function(){
-           alert("Yazının üstünden ayrıldın.");
-        });*/
-        /*$("p.me").mousedown(function() {
-            alert("Sağ-sol veya orta click yaptınız.!");
-        });*/
-        /*$("p.me").hover(function(){
-        alert("Paragrafın üzerindesiniz.");
-        },
-        function(){
-        alert("Paragraftan ayrıldınız.");
-        });*/
-        /* 
-         $("input#t1").focus(function() {
-             $(this).css("background-color", "yellow");
-             $(this).css("color", "green");
-         });
-         $("input").blur(function() {
-             $(this).css("background-color", "pink");
-         });*/
+ 
+<div id="flip">Click to slide down panel</div>
+<div id="panel">Hello world!</div>
 
-        $("p.me").on({ //ON method
-        mouseenter: function() {
-            $(this).css("background-color", "lightgray");
-        },
-        mouseleave: function() {
-            $(this).css("background-color", "lightblue");
-        },
-        click: function() {
-            $(this).css("background-color", "yellow");
-        }
-        });
-        
-
-    </script>
 </body>
-
 </html>

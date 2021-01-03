@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <title>Sliding</title>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <script>
+            $(document).ready(function(){
+               $("#sabit").click(function(){
+                   $("#acilir").slideDown(1000);
+               }) ;
+            });
+            $(document).ready(function(){
+               $("#sabit").dblclick(function(){
+                   $("#acilir").slideUp(1000);
+               }) ;
+            });
+            // toggle var bunda da.
+        </script>
+        <style>
+            #acilir,#sabit {
+                padding: 5px;
+                text-align: center;
+                border : 3px solid black;
+                background-color: blue;
+                color:black;
+            }
+            #acilir {
+                padding: 50px;
+                display: none;
+            }
+            
+        </style>
+        <div id="sabit">Click here.</div>
+        <div id="acilir">Welcome to blogbyengineers. </div>
+    </body>
+   
+</html>
